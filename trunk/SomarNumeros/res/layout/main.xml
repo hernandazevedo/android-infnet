@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:ems="10" android:hint="@string/hint_primeiro" 
         android:inputType="numberDecimal" 
-        android:digits="123456789.," >
+        android:digits="0123456789.," >
 
         <requestFocus />
     </EditText>
@@ -38,7 +38,7 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:hint="@string/hint_segundo"
 		android:inputType="numberDecimal" 
-        android:digits="123456789.," />
+        android:digits="0123456789.," />
 	
 	<Button
 		android:id="@+id/btsomar"
