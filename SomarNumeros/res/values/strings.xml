@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Digite o primeiro numero:</string>
+    <string name="hello2">Digite o segundo numero:</string>
+    <string name="hint_primeiro">Primeiro numero</string>
+    <string name="hint_segundo">Segundo numero</string>
+    <string name="labelSomar">Somar</string>
+    
+    <string name="app_name">SomarNumeros</string>
+
+</resources>
