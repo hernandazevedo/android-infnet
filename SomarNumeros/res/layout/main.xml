@@ -17,6 +17,14 @@
 
         <requestFocus />
     </EditText>
+	
+    <Spinner
+        android:id="@+id/spinner_op"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/operadores_array"
+        android:prompt="@string/escolha_operador" />
+    
     
     <TextView
         android:layout_width="fill_parent"
@@ -33,6 +41,5 @@
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:text="@string/labelSomar" android:onClick="somar"/>
-    
     
 </LinearLayout>
