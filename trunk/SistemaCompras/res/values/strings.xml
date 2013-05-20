@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SistemaCompras</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Escolha seu produto</string>
+    <string name="lbl_arroz">Arroz (R$ 2,69)</string>
+    <string name="lbl_leite">Leite (R$ 5,00)</string>
+    <string name="lbl_carne">Carne (R$ 9,70)</string>
+    <string name="lbl_feijao">Feijão (R$ 2,30)</string>
+    <string name="lbl_total">Total de Compras</string>
+
+</resources>

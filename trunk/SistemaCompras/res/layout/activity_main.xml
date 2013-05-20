@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    
+    <CheckBox
+        android:id="@+id/chkArroz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_arroz" />
+    
+    <CheckBox
+        android:id="@+id/chkLeite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_leite" />
+    
+    <CheckBox
+        android:id="@+id/chkCarne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_carne" />
+    
+    <CheckBox
+        android:id="@+id/chkFeijao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_feijao" />
+    
+    <Button
+		android:id="@+id/btTotal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/lbl_total" android:onClick="calcularTotal"/>
+
+</LinearLayout>
