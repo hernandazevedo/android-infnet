@@ -5,26 +5,16 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class SomarNumerosActivity extends Activity {
+	private String descricaoOperacao;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-//        Button btsomar = (Button) findViewById(R.id.btsomar);
-//        btsomar.setOnClickListener(new View.OnClickListener(){
-//        	public void onClick(View arg0) {
-//        		EditText ednumero1 = (EditText) findViewById(R.id.numero1);
-//                EditText ednumero2 = (EditText) findViewById(R.id.numero2);
-//                
-//        		double num1 = Double.parseDouble(
-//        		ednumero1.getText().toString());
-//        		double num2 = Double.parseDouble(
-//        		ednumero2.getText().toString());
-//        		double res = num1 + num2;
-//        		}
-//        		});
+
        
     }
     
@@ -37,13 +27,52 @@ public class SomarNumerosActivity extends Activity {
 		ednumero1.getText().toString());
 		double num2 = Double.parseDouble(
 		ednumero2.getText().toString());
-		double res = num1 + num2;
+		
+		Spinner spinner_op = (Spinner)findViewById(R.id.spinner_op);
+		double res = doOperation(num1, num2, spinner_op.getSelectedItem().toString());
+		
 		AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
-		dialogo.setTitle("Aviso");
-		dialogo.setMessage("Soma:" + res);
+		dialogo.setTitle(descricaoOperacao);
+		dialogo.setMessage("Resultado:" + res);
 		dialogo.setNeutralButton("OK", null);
 		dialogo.show();
 		
 	
     }
+    
+    public double doOperation(double arg1,double arg2,String operador){
+    	if(operador != null){
+    		double res = 0.0;
+	    	switch (operador.charAt(0)) {
+			case '+':
+				descricaoOperacao = "Soma";
+				res = arg1 + arg2;
+				break;
+			case '-':
+				descricaoOperacao = "Diferença";
+				res = arg1 - arg2;
+				break;
+
+			case '/':
+				descricaoOperacao = "Divisão";
+				res = arg1 / arg2;
+				break;
+
+			case '*':
+				descricaoOperacao = "Multiplicação";
+				res = arg1 * arg2;
+				break;
+
+	
+			default:
+				break;
+			}
+	    	
+	    	return res;
+    	}else{
+    		return 0.0;
+    	}
+    }
+    
+    
 }

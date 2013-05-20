@@ -3,10 +3,17 @@
 
     <string name="hello">Digite o primeiro numero:</string>
     <string name="hello2">Digite o segundo numero:</string>
+    <string name="escolha_operador">Escolha o operador:</string>
     <string name="hint_primeiro">Primeiro numero</string>
     <string name="hint_segundo">Segundo numero</string>
-    <string name="labelSomar">Somar</string>
+    <string name="labelSomar">Vai</string>
     
     <string name="app_name">SomarNumeros</string>
-
+    
+	<string-array name="operadores_array">
+        <item>+</item>
+        <item>-</item>
+        <item>/</item>
+        <item>*</item>        
+    </string-array>
 </resources>
