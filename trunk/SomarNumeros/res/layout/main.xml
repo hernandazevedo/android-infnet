@@ -13,7 +13,9 @@
         android:id="@+id/numero1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" android:hint="@string/hint_primeiro" >
+        android:ems="10" android:hint="@string/hint_primeiro" 
+        android:inputType="numberDecimal" 
+        android:digits="123456789.," >
 
         <requestFocus />
     </EditText>
