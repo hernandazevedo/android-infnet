@@ -49,17 +49,17 @@ public class SomarNumerosActivity extends Activity {
 				res = arg1 + arg2;
 				break;
 			case '-':
-				descricaoOperacao = "DiferenÁa";
+				descricaoOperacao = "Diferen√ßa";
 				res = arg1 - arg2;
 				break;
 
 			case '/':
-				descricaoOperacao = "Divis„o";
+				descricaoOperacao = "Divis√£o";
 				res = arg1 / arg2;
 				break;
 
 			case '*':
-				descricaoOperacao = "MultiplicaÁ„o";
+				descricaoOperacao = "Multiplica√ß√£o";
 				res = arg1 * arg2;
 				break;
 
