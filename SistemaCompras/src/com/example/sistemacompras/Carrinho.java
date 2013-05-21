@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Carrinho {
 
-	private static Carrinho instance = null;
+	private static Carrinho instance = null; 
 	
 	private List<Produto> produtos = new ArrayList<Produto>();
 	
