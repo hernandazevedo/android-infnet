@@ -9,6 +9,7 @@
     <string name="labelSomar">Vai</string>
     
     <string name="app_name">SomarNumeros</string>
+   
     
 	<string-array name="operadores_array">
         <item>+</item>
