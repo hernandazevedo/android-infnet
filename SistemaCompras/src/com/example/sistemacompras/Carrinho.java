@@ -1,8 +1,13 @@
 package com.example.sistemacompras;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Carrinho {
 
 	private static Carrinho instance = null;
+	
+	private List<Produto> produtos = new ArrayList<Produto>();
 	
 	private Carrinho() {
 	}
@@ -16,7 +21,7 @@ public class Carrinho {
 	}
 	
 	public void adicionar(Produto p){
-		
+		produtos.add(p);
 	}
 	
 	
