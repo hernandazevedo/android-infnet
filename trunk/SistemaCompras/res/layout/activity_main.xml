@@ -40,4 +40,5 @@
 		android:layout_height="wrap_content"
 		android:text="@string/lbl_total" android:onClick="calcularTotal"/>
 
+
 </LinearLayout>
