@@ -4,6 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -39,11 +40,14 @@
 		android:layout_height="wrap_content" android:hint="@string/hint_segundo"
 		android:inputType="numberDecimal" 
         android:digits="0123456789.," />
-	
-	<Button
-		android:id="@+id/btsomar"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="@string/labelSomar" android:onClick="somar"/>
+
+    <Button
+        android:id="@+id/btsomar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="somar"
+        android:text="@string/labelSomar"  />
+
+    
     
 </LinearLayout>
