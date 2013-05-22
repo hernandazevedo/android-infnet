@@ -67,6 +67,7 @@ public class MainActivity extends Activity {
 		edsalario.setText("");
 		RadioButton rb40 = (RadioButton)findViewById(R.id.rb40);
 		rb40.setChecked(true);
+		edsalario.requestFocus();
 		
 		AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
 		dialogo.setTitle("Aviso");
