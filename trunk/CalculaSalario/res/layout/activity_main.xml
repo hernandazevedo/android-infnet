@@ -48,6 +48,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_senha"
+        android:inputType="numberDecimal" 
+        android:digits="0123456789"
         />
     
     <Button 
