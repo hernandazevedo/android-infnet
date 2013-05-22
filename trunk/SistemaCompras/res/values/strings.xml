@@ -8,6 +8,7 @@
     <string name="lbl_leite">Leite (R$ 5,00)</string>
     <string name="lbl_carne">Carne (R$ 9,70)</string>
     <string name="lbl_feijao">Feijão (R$ 2,30)</string>
-    <string name="lbl_total">Total de Compras</string>
+    <string name="lbl_adicionarCarrinho">Adicionar no Carrinho</string>
+    <string name="lbl_verCarrinho">Ver Carrinho</string>
 
 </resources>
