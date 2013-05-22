@@ -1,64 +1,71 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/scroll" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    
-    <EditText
-        android:id="@+id/edsalario"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" 
-        android:digits="0123456789.," >
-
-        <requestFocus />
-    </EditText>
-    
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_qual_percent" />
-    
-    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/rgopcoes">
-        
-        <RadioButton 
-            android:id="@+id/rb40"
-            android:text="@string/valor_40"
-            />
-        <RadioButton 
-            android:id="@+id/rb45"
-            android:text="@string/valor_45"
-            />
-        <RadioButton 
-            android:id="@+id/rb50"
-            android:text="@string/valor_50"
-            />
-       
-        
-    </RadioGroup>
-    
-    <EditText 
-        android:id="@+id/txtSenha"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_senha"
-        android:inputType="numberDecimal" 
-        android:digits="0123456789"
-        />
-    
-    <Button 
-        android:id="@+id/btn_calclularSalario"
-        android:text="@string/btn_calclularSalario"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="calclularSalario"
-        />
-    
-
-</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/hello_world" />
+	    
+	    <EditText
+	        android:id="@+id/edsalario"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberDecimal" 
+	        android:digits="0123456789.," >
+	
+	        <requestFocus />
+	    </EditText>
+	    
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lbl_qual_percent" />
+	    
+	    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/rgopcoes">
+	        
+	        <RadioButton 
+	            android:id="@+id/rb40"
+	            android:text="@string/valor_40"
+	            />
+	        <RadioButton 
+	            android:id="@+id/rb45"
+	            android:text="@string/valor_45"
+	            />
+	        <RadioButton 
+	            android:id="@+id/rb50"
+	            android:text="@string/valor_50"
+	            />
+	       
+	        
+	    </RadioGroup>
+	    
+	    <EditText 
+	        android:id="@+id/txtSenha"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/hint_senha"
+	        android:inputType="numberDecimal" 
+	        android:digits="0123456789"
+	        />
+	    
+	    <Button 
+	        android:id="@+id/btn_calclularSalario"
+	        android:text="@string/btn_calclularSalario"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:onClick="calclularSalario"
+	        />
+	    
+	
+	</LinearLayout>
+</ScrollView>
