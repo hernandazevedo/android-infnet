@@ -1,60 +1,68 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
 
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/scroll" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    
-     <EditText
-        android:id="@+id/edsalario"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" 
-        android:digits="0123456789.," >
-
-        <requestFocus />
-    </EditText>
-    
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_escolha_funcao" />
-
-      <Spinner
-        android:id="@+id/spinnerFuncionario"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/funcionario_array"
-        />
-     <TextView
-        android:id="@+id/lblSpnOpcoes"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lbl_qual_percent" android:labelFor="@+id/spnopcoes"
-        android:visibility="invisible"
-        />
-         
-    <Spinner
-        android:id="@+id/spnopcoes"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        />
-        
-        
-        
-    
-    <Button 
-        android:id="@+id/btn_calclularSalario"
-        android:text="@string/btn_calclularSalario"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="calclularSalario"
-        />
-    
-</LinearLayout>
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		
+		
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/hello_world" />
+		    
+		     <EditText
+		        android:id="@+id/edsalario"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="numberDecimal" 
+		        android:digits="0123456789.," >
+		
+		        <requestFocus />
+		    </EditText>
+		    
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lbl_escolha_funcao" />
+		
+		      <Spinner
+		        android:id="@+id/spinnerFuncionario"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/funcionario_array"
+		        />
+		     <TextView
+		        android:id="@+id/lblSpnOpcoes"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lbl_qual_percent" android:labelFor="@+id/spnopcoes"
+		        android:visibility="invisible"
+		        />
+		         
+		    <Spinner
+		        android:id="@+id/spnopcoes"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:visibility="invisible"
+		        />
+		        
+		        
+		        
+		    
+		    <Button 
+		        android:id="@+id/btn_calclularSalario"
+		        android:text="@string/btn_calclularSalario"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:onClick="calclularSalario"
+		        />
+		    
+		</LinearLayout>
+</ScrollView>		
