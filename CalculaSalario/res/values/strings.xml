@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CalculaSalario</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Digite seu salario (R$):</string>
+    <string name="lbl_qual_percent">Qual o seu percentual?</string>
+    <string name="hint_senha">Digite a senha</string>
+    
+    <string name="btn_calclularSalario">Calcular novo salário</string>
+    
+    
+    <string name="valor_40">40%</string>
+    <string name="valor_45">45%</string>
+    <string name="valor_50">50%</string>
+
+</resources>
