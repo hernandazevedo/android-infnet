@@ -42,7 +42,7 @@
 		        android:id="@+id/lblSpnOpcoes"
 		        android:layout_width="fill_parent"
 		        android:layout_height="wrap_content"
-		        android:text="@string/lbl_qual_percent" android:labelFor="@+id/spnopcoes"
+		        android:text="@string/lbl_qual_percent"
 		        android:visibility="invisible"
 		        />
 		         
