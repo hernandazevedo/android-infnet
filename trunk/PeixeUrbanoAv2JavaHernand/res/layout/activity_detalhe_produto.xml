@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <ImageView
+        android:id="@+id/detalheImagemProduto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_launcher" 
+        />
+    
+
+
+    <LinearLayout
+	    android:id="@+id/panelGroupNomeProduto"    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/detalheImagemProduto"
+	    android:layout_toRightOf="@+id/detalheImagemProduto"
+	    android:orientation="horizontal" >
+
+        <TextView
+        android:id="@+id/detalheNomeProdutoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textAppearance="@android:attr/textAppearanceMedium" />
+        
+	    <TextView
+	        android:id="@+id/detalheNomeProduto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:attr/textAppearanceMedium" />
+    
+    
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/panelGroupPrecoProduto"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/panelGroupNomeProduto"
+	    android:layout_toRightOf="@+id/detalheImagemProduto"
+	    android:orientation="horizontal" >
+
+        
+	    <TextView
+	        android:id="@+id/detalhePrecoProdutoLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/preco"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+	    
+	     <TextView
+	        android:id="@+id/detalhePrecoProduto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/panelGroupPrecoAntigoProduto"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/panelGroupPrecoProduto"
+	    android:layout_toRightOf="@+id/detalheImagemProduto"
+	    android:orientation="horizontal" >
+
+        
+	    <TextView
+	        android:id="@+id/detalhePrecoAntigoLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/preco_antigo"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+	    
+	     <TextView
+	        android:id="@+id/detalhePrecoAntigo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/panelGroupNumSoldProduto"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/panelGroupPrecoAntigoProduto"
+	    android:layout_toRightOf="@+id/detalheImagemProduto"
+	    android:orientation="horizontal" >
+
+        
+	    <TextView
+	        android:id="@+id/detalheNumSoldLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ofertas_vendidas"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+	    
+	     <TextView
+	        android:id="@+id/detalheNumSold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/panelGroupPerncentDiscProduto"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/panelGroupNumSoldProduto"
+	    android:layout_toRightOf="@+id/detalheImagemProduto"
+	    android:orientation="horizontal" >
+
+        
+	    <TextView
+	        android:id="@+id/detalhePerncentDiscLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/percent_disconto"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+	    
+	     <TextView
+	        android:id="@+id/detalhePerncentDisc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+   
+  
+
+</RelativeLayout>
